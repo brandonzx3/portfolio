@@ -5,9 +5,11 @@ console.log(localStorage.getItem("theme"));
 if(localStorage.getItem("theme") == null) {
     localStorage.setItem("theme", "dark");
 }
-
+var switchEffect = new Audio()
 buttonEl.onclick = function() {
-    document.querySelector("#switch").play();
+    //switchEffect.pause();
+    switchEffect = new Audio("./assets/switch.mp3");
+    switchEffect.play();
 
     if(localStorage.getItem("theme") == "dark") {
         localStorage.setItem("theme", "light");
