@@ -25,9 +25,13 @@ body {
 
 #themeButton {
     position: fixed;
-    left: 0;
+    left: 5;
     top: 0;
-    /*background: transparent; uncomment when images lol*/
+    background: transparent;
     border: none;
     outline: none !important;
+}
+
+#lightbulb {
+    font-size: 35;
 }
