@@ -33,7 +33,17 @@ body {
 }
 
 #lightbulb {
-    font-size: 35;
+    font-size: 23;
+}
+
+#lightbulb:hover {
+    cursor: pointer;
+}
+
+
+.lang_button:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 #grid{
@@ -41,8 +51,17 @@ body {
     grid-template-columns: auto auto auto auto;
     height: 100%;
     background-color: var(--background);
+    margin: 5;
 }
 
 .grid-item {
     background-color: var(--background);
+    outline: 5px solid var(--foreground);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.grid-item::-webkit-scrollbar {
+    display: none;
 }
