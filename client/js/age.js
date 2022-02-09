@@ -1,6 +1,5 @@
 let ageEL = document.getElementById("age");
 
-
 var age, daysBetweenDates;
 daysBetweenDates = function(d1, d2) {
   var diffDays, oneDay;

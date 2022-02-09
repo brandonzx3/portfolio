@@ -35,3 +35,14 @@ body {
 #lightbulb {
     font-size: 35;
 }
+
+#grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 100%;
+    background-color: aqua;
+}
+
+.grid-item {
+    background-color: aliceblue;
+}
