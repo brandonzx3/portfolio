@@ -19,7 +19,7 @@ body {
 
 #age {
     display: inline-block;
-    width: 7em;
+    width: 6.4em;
     text-align: left;
 }
 
@@ -48,18 +48,29 @@ body {
 
 #grid{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 33.333% 33.333% 33.333%;
     height: 100%;
     background-color: var(--background);
     margin: 5;
 }
 
 .grid-item {
+    text-align: center;
     background-color: var(--background);
     outline: 5px solid var(--foreground);
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+.grid-item p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.grid-item ul {
+    text-align: left;
+    font-size: large;
 }
 
 .grid-item::-webkit-scrollbar {

@@ -41,4 +41,5 @@ window.onload = function() {
     Array.from(gridItems).forEach(item => {
         item.setAttribute("style", `transition: background-color ${anim_time}ms, color ${anim_time}ms, outline ${anim_time}ms`)
     });
+    document.querySelector("#grid").setAttribute("style", `transition: background-color ${anim_time}ms`);
 }
