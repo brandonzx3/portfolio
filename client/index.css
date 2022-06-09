@@ -8,6 +8,7 @@ body {
     color: var(--foreground);
     font-family: 'Inconsolata', monospace;
     margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -48,7 +49,7 @@ body {
 
 #grid{
     display: grid;
-    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
     height: 100%;
     background-color: var(--background);
     margin: 5;
@@ -57,7 +58,6 @@ body {
 .grid-item {
     text-align: center;
     background-color: var(--background);
-    outline: 5px solid var(--foreground);
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;

@@ -35,7 +35,7 @@ if(localStorage.getItem("theme") == "dark") {
 
 //add the transition effect after everything loads to stop weird effects
 window.onload = function() {
-    let anim_time = 200;
+    let anim_time = 150;
     document.body.setAttribute("style", `transition: background-color ${anim_time}ms, color ${anim_time}ms`);
     var gridItems = document.getElementsByClassName("grid-item");
     Array.from(gridItems).forEach(item => {
