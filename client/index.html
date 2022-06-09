@@ -4,52 +4,58 @@
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-    <body id="particles-js">
-        <button type="button" id="themeButton"><span class="material-icons" id="lightbulb">tungsten</span></button>
-        <div id="main">
-            <h2>Im Brandonzx3 and im a <span id="age"></span> old developer</h2>
-            <h2>I program in 
-                <span class="lang_button" style="color: rgb(145, 59, 9);">Java</span> 
-                <span class="lang_button" style="color: lime;">Javascript</span> and
-                <span class="lang_button" style="color: yellow;">Labview</span>
-            </h2>
-            <h4>My Socials: 
-                <span><a href="https://twitter.com/Brandonzx3VEVO">Twitter</a></span>
-                <span><a href="https://github.com/brandonzx3">Github</a></span>
-                <span><a href="https://gitlab.com/brandonzx3">Gitlab</a></span>
-            </h4>
+    <body>
+        <div id="container">
+            <div id="main">
+                <h2>Im Brandonzx3 and im a <span id="age"></span> old developer</h2>
+                <h2>I program in 
+                    <span class="lang_button" style="color: rgb(145, 59, 9);">Java</span> 
+                    <span class="lang_button" style="color: lime;">Javascript</span> and
+                    <span class="lang_button" style="color: yellow;">Labview</span>
+                </h2>
+                <h4>My Socials: 
+                    <span><a href="https://twitter.com/Brandonzx3VEVO">Twitter</a></span>
+                    <span><a href="https://github.com/brandonzx3">Github</a></span>
+                    <span><a href="https://gitlab.com/brandonzx3">Gitlab</a></span>
+                </h4>
+            </div>
+            <div id="grid">
+                <div id="Robotics" class="grid-item">
+                    <h1>Robotics</h1>
+                    <p>Robitics has been a pasion of mine since i was a kid. In high school I joind FRC team 5848 Ironclad and became the lead programmer.</p>
+                    <p>In Ironclad I learned how to program in Labview and work directly with hardware.</p>
+                    <p>I've also work with personal proects using Arduino and Raspbrry PI.</p>
+                    <ul>
+                        <li><a href="https://gitlab.com/ironclad_code/ironclad-2022">Ironclad 2022 robot code</a></li>
+                        <li><a href="https://gitlab.com/ironclad_code/ironclad-pathplanner">Ironclad path follower code</a></li>
+                        <li><a href="https://gitlab.com/ironclad_code/fish-tracker">Fish Tracker</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h1>My favorite projects</h1>
+                    <p>I have lots of fun programming big and small projects and over the years I've become better, more efficent, and write cleaner code. Heres a few of My favorite projects I've worked on over the years</p>
+                    <ul>
+                        <li><a href="https://github.com/brandonzx3/bbsc">A scheduling app for my high school</a></li>
+                        <li><a href="https://github.com/brandonzx3/arduino-robot-controller">An FRC Driver station clone to communicate to an arduino</a></li>
+                    </ul>
+                </div>
+                <div  class="grid-item">
+                    <h1>Other things I've worked on</h1>
+                    <ul>
+                        <li><a href="https://github.com/Christian7573/glaprs">Glap.RS</a></li>
+                        <li><a href="https://gitlab.com/GrantFBG/conquest-watcher">Loka Conquest Watcher</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div id="grid">
-            <div id="Robotics" class="grid-item">
-                <h1>Robotics</h1>
-                <p>Robitics has been a pasion of mine since i was a kid. In high school I joind FRC team 5848 Ironclad and became the lead programmer.</p>
-                <p>In Ironclad I learned how to program in Labview and work directly with hardware.</p>
-                <p>I've also work with personal proects using Arduino and Raspbrry PI.</p>
-                <ul>
-                    <li><a href="https://gitlab.com/ironclad_code/ironclad-2022">Ironclad 2022 robot code</a></li>
-                    <li><a href="https://gitlab.com/ironclad_code/ironclad-pathplanner">Ironclad path follower code</a></li>
-                    <li><a href="https://gitlab.com/ironclad_code/fish-tracker">Fish Tracker</a></li>
-                </ul>
-            </div>
-            <div class="grid-item">
-                <h1>My favorite projects</h1>
-                <p>I have lots of fun programming big and small projects and over the years I've become better, more efficent, and write cleaner code. Heres a few of My favorite projects I've worked on over the years</p>
-                <ul>
-                    <li><a href="https://github.com/brandonzx3/bbsc">A scheduling app for my high school</a></li>
-                    <li><a href="https://github.com/brandonzx3/arduino-robot-controller">An FRC Driver station clone to communicate to an arduino</a></li>
-                </ul>
-            </div>
-            <div  class="grid-item">
-                <h1>Other things I've worked on</h1>
-                <ul>
-                    <li><a href="https://github.com/Christian7573/glaprs">Glap.RS</a></li>
-                    <li><a href="https://gitlab.com/GrantFBG/conquest-watcher">Loka Conquest Watcher</a></li>
-                </ul>
-            </div>
-        </div>
+        <div id="particles"></div>
     </body>
     <script src="js/age.js"></script>
-    <script src="js/theme.js"></script>
     <script src="js/langButton.js"></script>
-    <script src="particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles', 'assets/particles.json', function(){
+            console.log('particles.json loaded...');
+        });
+    </script>
 </html>

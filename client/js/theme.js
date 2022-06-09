@@ -1,10 +1,6 @@
 var buttonEl = document.querySelector("#themeButton");
 var root = document.querySelector(":root");
 
-particlesJS.load('particles-js', 'assets/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-
 console.log(localStorage.getItem("theme"));
 if(localStorage.getItem("theme") == null) {
     localStorage.setItem("theme", "dark");
