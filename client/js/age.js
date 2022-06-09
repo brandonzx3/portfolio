@@ -9,5 +9,5 @@ daysBetweenDates = function(d1, d2) {
 };
 
 setInterval(() => {
-    ageEL.innerHTML = (daysBetweenDates('Jun 12, 2003 14:48:00', new Date()) / 365).toString().substring(0, 12);
+    ageEL.innerHTML = (daysBetweenDates('Jun 15, 2003 14:48:00', new Date()) / 365).toString().substring(0, 12);
 });
