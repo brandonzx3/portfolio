@@ -5,7 +5,6 @@ body {
     font-size: 1.1em;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 #particles {
@@ -17,6 +16,14 @@ body {
 #container {
     position: absolute;
     pointer-events: none
+    
+}
+
+#about {
+    text-align: center;
+    position: relative;
+    left: 7.5%;
+    width: 85%;
 }
 
 a {
@@ -56,6 +63,10 @@ a {
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    outline: white solid 2px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
 }
 
 .grid-item p {

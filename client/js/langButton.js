@@ -15,7 +15,8 @@ const javaRepos = [
 const nodeRepos = [
     "https://github.com/brandonzx3/portfolio",
     "https://github.com/brandonzx3/glaprs",
-    "https://github.com/brandonzx3/bbsc"
+    "https://github.com/brandonzx3/bbsc",
+    "https://github.com/brandonzx3/BoNK-Bot-2.0"
 ];
 const lvRepos = [
     "https://github.com/brandonzx3/ironclad5847-2020-infinite-recharge",
