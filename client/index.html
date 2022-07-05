@@ -67,8 +67,16 @@
     <script src="js/langButton.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        particlesJS.load('particles', 'assets/particles.json', function(){
-            console.log('particles.json loaded...');
-        });
+        const isMobile = ('ontouchstart' in document.documentElement && navigator.userAgent.match(/Mobi/));
+
+        if(!isMobile) {
+            particlesJS.load('particles', 'assets/particles.json', function(){
+                console.log('particles.json loaded...');
+            });
+        } else {
+            particlesJS.load('particles', 'assets/particles-less.json', function(){
+                console.log('particles.json loaded...');
+            });
+        }
     </script>
 </html>
