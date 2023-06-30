@@ -1,7 +1,12 @@
+:root {
+    --background: black
+    --foreground: white
+}
+
 body {
     font-family: 'Inconsolata', monospace;
-    color: white;
-    background-color: black;
+    color: var(--foreground);
+    background-color: var(--background);
     font-size: 1.1em;
     margin: 0;
     padding: 0;
@@ -19,7 +24,7 @@ body {
     
 }
 
-#about {
+#splash {
     text-align: center;
     position: relative;
     left: 7.5%;
@@ -41,14 +46,23 @@ a {
     text-align: left;
 }
 
-
-.lang_button {
-    pointer-events: all;
+#particles {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
 }
 
-.lang_button:hover {
-    text-decoration: underline;
+#themeButton {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
     cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.github-profile-badge-name {
+    color: var(--foreground) !important;
 }
 
 #grid{
@@ -63,7 +77,7 @@ a {
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    outline: white solid 2px;
+    outline: var(--foreground) solid 2px;
     border-radius: 20px;
     margin: 10px;
     padding: 5px;

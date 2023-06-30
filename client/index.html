@@ -2,36 +2,18 @@
     <head>
         <title>Brandonzx3.dev</title>
         <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
     <body>
+        <button type="button" id="themeButton"><span class="material-symbols-outlined">wb_sunny</span></button>
         <div id="container">
             <div id="main">
                 <h2>Im Brandonzx3 and im a <span id="age"></span> year old developer</h2>
-                <h2>I program in 
-                    <span class="lang_button" style="color: rgb(145, 59, 9);">Java</span> 
-                    <span class="lang_button" style="color: lime;">Javascript</span> and
-                    <span class="lang_button" style="color: yellow;">Labview</span>
-                </h2>
-                <h4>My Socials: 
-                    <span><a href="https://twitter.com/Brandonzx3VEVO">Twitter</a></span>
-                    <span><a href="https://github.com/brandonzx3">Github</a></span>
-                    <span><a href="https://gitlab.com/brandonzx3">Gitlab</a></span>
-                    <span><a href="https://www.fiverr.com/brandonzx3">fiverr</a></span>
-                </h4>
+                <div style="margin: auto; width: fit-content;">
+                    <div class="github-profile-badge" data-user="brandonzx3" style="width: fit-content;"></div>
+                </div>
             </div>
-            <div id="about">
-                <h2 style="text-decoration: underline; margin-bottom: 0px;">About Me</h2>
-                <p style="font-weight: bold;">
-                    I'm brandonzx3 and I started programming in 2016 and started off by making unity games. I developed games in unity from then until 2017.
-                    In 2017 I started learning web development. I worked on websites and apps with no real purpose until wchool started in 2018.
-                    In school I met a friend who tought me more in depth web development and Javascript. We would go on to work on projects together and still work
-                    and collaborate with each other. He gave me one of the first insporations for one of my first truly complete project to remake his schedule app
-                    for school which is now hosted <a href="https://bbchs.brandonzx3.dev">Here</a>. That same year i joined robotics at my school and had the best 4
-                    years of my life. during highschool i would learn java, kotlin, rust, nodejs, VB, php, and lua. Now its 2022 I'm graduated from highschool and
-                    going to collage to study computer science.
-                </p>
-            </div>
+            <div id="splash"></div>
             <div id="grid">
                 <div id="Robotics" class="grid-item">
                     <h1>Robotics</h1>
@@ -60,19 +42,11 @@
                     </ul>
                 </div>
             </div>
-        </div>
         <div id="particles"></div>
     </body>
     <script src="js/age.js"></script>
-    <script src="js/langButton.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        const isMobile = ('ontouchstart' in document.documentElement && navigator.userAgent.match(/Mobi/));
-
-        if(!isMobile) {
-            particlesJS.load('particles', 'assets/particles.json', function(){
-                console.log('particles.json loaded...');
-            });
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/gh/Rapsssito/github-profile-badge@latest/src/widget.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/splash.js"></script>
 </html>
