@@ -44,23 +44,4 @@ window.onload = function() {
         item.setAttribute("style", `transition: background-color ${anim_time}ms, color ${anim_time}ms, outline ${anim_time}ms`)
     });
     document.querySelector("#grid").setAttribute("style", `transition: background-color ${anim_time}ms`);
-    
-    pickParticles(tsParticles);
-}
-
-function pickParticles(particles) {
-    if(localStorage.getItem("theme") == "dark") {
-        particles.loadJSON("particles", "assets/particlesjs-dark.json").then(container => {
-            console.log("callback - tsparticles config loaded");
-        }).catch(error => {
-            console.error(error);
-        });
-    } else {
-        particles.loadJSON("particles", "assets/particlesjs-light.json").then(container => {
-            console.log("callback - tsparticles config loaded");
-        }).catch(error => {
-            console.error(error);
-        });
-    }
-    
 }

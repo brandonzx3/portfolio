@@ -7,8 +7,6 @@ const splashes = [
     "Error on line 42!",
     "//This causes memory leaks!",
     "The code is simple!",
-    "Also try alador.dev!",
-    "As seen on TV!",
     "Awesome!",
     "Open Source!",
     "Now powered by ChatGPT!"
