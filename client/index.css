@@ -47,12 +47,6 @@ a {
     text-align: left;
 }
 
-#particles {
-    position: fixed;
-    inset: 0;
-    z-index: -10;
-}
-
 #themeButton {
     background-color: transparent;
     background-repeat: no-repeat;
@@ -92,4 +86,12 @@ a {
 
 .grid-item::-webkit-scrollbar {
     display: none;
+}
+
+.commit {
+	text-align: center;
+	outline: var(--foreground) solid 2px;
+	padding: 5px;
+	margin: 10px;
+	border-radius: 10px;
 }
